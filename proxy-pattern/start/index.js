@@ -1,10 +1,8 @@
+const fs = require('fs');
 const path = require('path');
-const FS_Proxy = require('./FS_Proxy');
 
-const fs = new FS_Proxy(require('fs'));
-
-// const txtFile = path.join(__dirname, 'Readme.txt');
-const mdFile = path.join(__dirname, 'Readme.md');
+const txtFile = path.join(__dirname, 'File.txt');
+const mdFile = path.join(__dirname, 'File.md');
 
 const result = (error, contents) => {
 
@@ -19,5 +17,5 @@ const result = (error, contents) => {
 
 }
 
-// fs.readFile(txtFile, 'UTF-8', result);
+fs.readFile(txtFile, 'UTF-8', result);
 fs.readFile(mdFile, 'UTF-8', result);
