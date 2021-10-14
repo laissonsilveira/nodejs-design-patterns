@@ -12,12 +12,11 @@ rl.prompt();
 
 rl.on('line', input => {
 
-    const [commandText, ...remaining] = input.split(' ')
-    const [fileName, ...fileText] = remaining
-    const text = fileText.join(' ')
+    const [commandText, ...remaining] = input.split(' ');
+    const [fileName, ...fileText] = remaining;
+    const text = fileText.join(' ');
 
     switch (commandText) {
-
         case "history":
             conductor.printHistory();
             break;

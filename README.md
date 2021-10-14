@@ -137,20 +137,54 @@ Reusable solution to a commonly occurring problem within a given context in soft
 
 ### Behavioral Pattherns
 
+* Chain of responsability
+
+    > "Avoid coupling the sender of a request to its receiver by giving more than one object a change to handle the request. Chain the receiving objects and pass the request along the chain."
+
+    ![Chain of responsability](chain-of-reponsibility-pattern/chain-of-responsibility.png)
+
+    Like many other behavioral design patterns, the Chain of Responsibility relies on transforming particular behaviors into stand-alone objects called handlers. The pattern suggests that you link these handlers into a chain. Each linked handler has a field for storing a reference to the next handler in the chain. In addition to processing a request, handlers pass the request further along the chain. The request travels along the chain until all handlers have had a chance to process it.
+
+    Ex: Created `Storage` to search in all Stores -> [Pattern](chain-of-reponsibility-pattern)
+
 * Command pattern
 
-    > ""
+    > " Encapsulate a request as an object, thereby letting you parameterize with different requests, queue or log request, and support undoable operations."
 
-    Ex: [Pattern]()
+    ![Command pattern](command-pattern/command-pattern.png)
+
+    Command is a behavioral design pattern that turns a request into a stand-alone object that contains all information about the request. This transformation lets you pass requests as a method arguments, delay or queue a request’s execution, and support undoable operations.
+
+    * Use the Command pattern when you want to parametrize objects with operations.
+    * Use the Command pattern when you want to queue operations, schedule their execution, or execute them remotely.
+    * Use the Command pattern when you want to implement reversible operations.
+
+    Ex: Created `commands` and your `conductor` -> [Pattern](command-pattern)
+
+* Interator pattern
+
+    > "Provide a way to access the elements of an aggregate object sequentially without exposing its underlying representation."
+
+    Iterator is a behavioral design pattern that lets you traverse elements of a collection without exposing its underlying representation (list, stack, tree, etc.).
+
+    The main idea of the Iterator pattern is to extract the traversal behavior of a collection into a separate object called an `iterator`.
+
+    ![Interator pattern](interator-pattern/interator-pattern.png)
+
+    Ex: Created `Interator` class -> [Pattern](interator-pattern)
 
 * Observer pattern
 
     > ""
 
-    Ex: [Pattern]()
+    ![Observer pattern](observer-pattern/observer-pattern.png)
+
+    Ex: [Pattern](observer-pattern)
 
 * Strategy pattern
 
     > ""
 
-    Ex: [Pattern]()
+    ![Strategy pattern](strategy-pattern/strategy-pattern.png)
+
+    Ex: [Pattern](strategy-pattern)
