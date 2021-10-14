@@ -246,7 +246,7 @@ Reusable solution to a commonly occurring problem within a given context in soft
 
     > "Define a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and update automatically."
 
-    ![Observer pattern](observer-pattern/observer-pattern.observer-pattern.png)
+    ![Observer pattern](observer-pattern/observer-pattern.png)
 
     Observer is a behavioral design pattern that lets you define a subscription mechanism to notify multiple objects about any events that happen to the object they’re observing.
 
