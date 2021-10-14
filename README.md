@@ -50,7 +50,7 @@ Reusable solution to a commonly occurring problem within a given context in soft
     * Use the Singleton pattern when you need stricter control over global variables.
 
     Ex:
-    * Created Singleton class to Logger -> [Normal Pattern](singleton-pattern)
+    * Created Singleton class to Logger -> [Normal Pattern](https://github.com/laissonsilveira/singleton-pattern)
     * Removed Singleton class to Logger because NodeJS `require` always put in the cache and use the same instance -> [NodeJS Pattern](singleton-nodejs-pattern)
 
 * Prototype pattern
@@ -66,7 +66,7 @@ Reusable solution to a commonly occurring problem within a given context in soft
     * Use the Prototype pattern when your code shouldn’t depend on the concrete classes of objects that you need to copy.
     * Use the pattern when you want to reduce the number of subclasses that only differ in the way they initialize their respective objects. Somebody could have created these subclasses to be able to create objects with a specific configuration.
 
-    Ex: Created scout_prototype -> [Pattern](prototype-pattern)
+    Ex: Created scout_prototype -> [Code](https://github.com/laissonsilveira/prototype-pattern)
 
 * Factory pattern
 
@@ -82,7 +82,7 @@ Reusable solution to a commonly occurring problem within a given context in soft
     * Use the Factory Method when you want to provide users of your library or framework with a way to extend its internal components.
     * Use the Factory Method when you want to save system resources by reusing existing objects instead of rebuilding them each time.
 
-    Ex: Created userFactory -> [Pattern](factory-pattern)
+    Ex: Created userFactory -> [Code](https://github.com/laissonsilveira/factory-pattern)
 
 * Builder pattern
 
@@ -98,7 +98,7 @@ Reusable solution to a commonly occurring problem within a given context in soft
     * Use the Builder pattern when you want your code to be able to create different representations of some product (for example, stone and wooden houses).
     * Use the Builder to construct Composite trees or other complex objects.
 
-    Ex: Created PersonBuilder -> [Pattern](builder-pattern)
+    Ex: Created PersonBuilder -> [Code](https://github.com/laissonsilveira/builder-pattern)
 
 ### Structural Patterns
 
@@ -126,7 +126,7 @@ Reusable solution to a commonly occurring problem within a given context in soft
 
     * Use the pattern when you want to reuse several existing subclasses that lack some common functionality that can’t be added to the superclass.
 
-    Ex: Created localStorare to work with Browser and NodeJS server -> [Pattern](adapter-pattern)
+    Ex: Created localStorare to work with Browser and NodeJS server -> [Code](https://github.com/laissonsilveira/adapter-pattern)
 
 * Proxy pattern
 
@@ -150,7 +150,7 @@ Reusable solution to a commonly occurring problem within a given context in soft
 
     * Smart reference. This is when you need to be able to dismiss a heavyweight object once there are no clients that use it.
 
-    Ex: Created FS_Proxy to control `fs module` -> [Pattern](proxy-pattern)
+    Ex: Created FS_Proxy to control `fs module` -> [Code](https://github.com/laissonsilveira/proxy-pattern)
 
 * Composite pattern
 
@@ -166,7 +166,7 @@ Reusable solution to a commonly occurring problem within a given context in soft
 
     * Use the pattern when you want the client code to treat both simple and complex elements uniformly.
 
-    Ex: Created CatalogGroup with the same interface -> [Pattern](composite-pattern)
+    Ex: Created CatalogGroup with the same interface -> [Code](https://github.com/laissonsilveira/composite-pattern)
 
 * Decorator pattern
 
@@ -187,7 +187,7 @@ Reusable solution to a commonly occurring problem within a given context in soft
 
     * Use the pattern when it’s awkward or not possible to extend an object’s behavior using inheritance.
 
-    Ex: Created Golden and Diamond Inventory -> [Pattern](decorator-pattern)
+    Ex: Created Golden and Diamond Inventory -> [Code](https://github.com/laissonsilveira/decorator-pattern)
 
 ### Behavioral Pattherns
 
@@ -207,7 +207,7 @@ Reusable solution to a commonly occurring problem within a given context in soft
 
     * Use the CoR pattern when the set of handlers and their order are supposed to change at runtime.
 
-    Ex: Created `Storage` to search in all Stores -> [Pattern](chain-of-reponsibility-pattern)
+    Ex: Created `Storage` to search in all Stores -> [Code](https://github.com/laissonsilveira/chain-of-reponsibility-pattern)
 
 * Command pattern
 
@@ -223,7 +223,7 @@ Reusable solution to a commonly occurring problem within a given context in soft
     * Use the Command pattern when you want to queue operations, schedule their execution, or execute them remotely.
     * Use the Command pattern when you want to implement reversible operations.
 
-    Ex: Created `commands` and your `conductor` -> [Pattern](command-pattern)
+    Ex: Created `commands` and your `conductor` -> [Code](https://github.com/laissonsilveira/command-pattern)
 
 * Interator pattern
 
@@ -240,7 +240,7 @@ Reusable solution to a commonly occurring problem within a given context in soft
     * Use the Iterator pattern when your collection has a complex data structure under the hood, but you want to hide its complexity from clients (either for convenience or security reasons).
     * Use the pattern to reduce duplication of the traversal code across your app.
 
-    Ex: Created `Interator` class -> [Pattern](interator-pattern)
+    Ex: Created `Interator` class -> [Code](https://github.com/laissonsilveira/interator-pattern)
 
 * Observer pattern
 
@@ -255,7 +255,7 @@ Reusable solution to a commonly occurring problem within a given context in soft
     * Use the Observer pattern when changes to the state of one object may require changing other objects, and the actual set of objects is unknown beforehand or changes dynamically.
     * Use the pattern when some objects in your app must observe others, but only for a limited time or in specific cases.
 
-    Ex: Created `subcribe` and `notify` -> [Pattern](observer-pattern)
+    Ex: Created `subcribe` and `notify` -> [Code](https://github.com/laissonsilveira/observer-pattern)
 
 * Strategy pattern
 
@@ -277,4 +277,4 @@ Reusable solution to a commonly occurring problem within a given context in soft
 
     * Use the pattern when your class has a massive conditional operator that switches between different variants of the same algorithm.
 
-    Ex: Created Log`Strategy` -> [Pattern](strategy-pattern)
+    Ex: Created Log`Strategy` -> [Code](https://github.com/laissonsilveira/strategy-pattern)
